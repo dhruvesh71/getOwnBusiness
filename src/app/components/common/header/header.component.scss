@@ -1,0 +1,21 @@
+@import '../../../../styles/styles-common.scss';
+
+body {
+    @include  comp-color(#124854, $white);
+
+    div h1 {
+        font-size  : 18px;
+        font-weight: 700;
+        width      : $width;
+    }
+}
+
+.header-nav-button {
+    float: right;
+
+    button {
+        border-radius  : 4px;
+        text-decoration: none;
+        display        : inline-block;
+    }
+}

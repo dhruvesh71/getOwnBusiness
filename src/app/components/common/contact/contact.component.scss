@@ -1,0 +1,27 @@
+@import '../../../../styles/styles-common.scss';
+
+body {
+
+    div.w3-center {
+        p {
+            font-size  : xx-large;
+            font-weight: 700;
+        }
+    }
+    
+    form {
+    
+        text-align: center;
+    
+        h3 {
+            font-size  : 18px;
+            font-weight: 700;
+        }
+    
+        p mat-form-field {
+            width: 100%;
+        }
+    
+    }
+}
+

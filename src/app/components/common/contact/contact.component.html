@@ -1,0 +1,42 @@
+<body class="w3-container">
+
+    <div class="w3-center">
+        <p>Let's Connect
+            <mat-divider></mat-divider>
+        <p>
+    </div>
+
+    <form [formGroup]="contactFormGroup">
+
+        <h3>Add your query and we will contact you</h3>
+        <p>
+            <mat-form-field appearance="outline">
+                <mat-label>Name</mat-label>
+                <input matInput placeholder="Santosh Kumar" aria-label="Name" formControlName="name"
+                   maxlength="30"  required />
+                <mat-error>{{errorMessage}}</mat-error>
+            </mat-form-field>
+        </p>
+
+        <p>
+            <mat-form-field appearance="outline">
+                <mat-label>Regarding</mat-label>
+                <textarea  matInput placeholder="Need to refurnish my house" aria-label="Regarding"
+                    formControlName="regarding" required></textarea>
+                <mat-error>{{errorMessage}}</mat-error>
+            </mat-form-field>
+        </p>
+
+        <p>
+            <mat-form-field appearance="outline">
+                <mat-label>Your Contact</mat-label>
+                <input type="number" matInput placeholder="1234567890" aria-label="Regarding"
+                    formControlName="contactNumber" maxlength="10" required />
+                <mat-error>{{errorMessage}}</mat-error>
+            </mat-form-field>
+        </p>
+
+        <button mat-raised-button color="primary">Contact me</button>
+
+    </form>
+</body>

@@ -1,0 +1,29 @@
+@import '../../../../../styles/styles-common.scss';
+
+.backgound-image {
+    background         : url("../../../../../assets/santoshInteriors/home.jpg");
+    height             : 540px;
+    width              : $width;
+    position           : relative;
+    z-index            : -1;
+    background-size    : cover;
+    background-repeat  : no-repeat;
+    background-position: center;
+}
+
+.caption {
+    position  : relative;
+    left      : 0;
+    top       : 10%;
+    text-align: center;
+    color     : #000;
+
+    span.border {
+        background-color: #111;
+        color           : #fff;
+        padding         : 18px;
+        font-size       : 30px;
+        letter-spacing  : 10px;
+        opacity         : 0.8;
+    }
+}

@@ -1,0 +1,19 @@
+body {
+    background-color: #000000;
+    color: white;
+
+    div.w3-left {
+        font-size       : 12px;
+        font-weight     : bold;
+        width: 50%;
+
+        nav a {
+            text-decoration: none;
+        }
+    }
+
+    div.w3-right {
+        font-size       : 14px;
+        font-weight     : bold;
+    }
+}
