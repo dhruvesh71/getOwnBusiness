@@ -5,16 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './components/common/header/header.component';
-import { FooterComponent } from './components/common/footer/footer.component';
 import { ErrorPageComponent } from './components/common/error-page/error-page.component';
+import { ErrorMessageComponent } from './components/common/error-message/error-message.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent,
     ErrorPageComponent,
+    ErrorMessageComponent,
   ],
   imports: [
     BrowserModule,
@@ -23,5 +23,6 @@ import { ErrorPageComponent } from './components/common/error-page/error-page.co
   ],
   providers: [],
   bootstrap: [AppComponent],
+  entryComponents: [ErrorMessageComponent],
 })
 export class AppModule { }

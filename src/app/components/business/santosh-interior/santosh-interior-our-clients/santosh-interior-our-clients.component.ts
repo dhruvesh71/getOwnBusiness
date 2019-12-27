@@ -1,5 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ErrorHandler } from '@angular/core';
 import { IOurClientData } from 'src/app/interfaces/our-clients-data';
+import { SantoshInteriorService } from '../service/santosh-interior.service';
+import { MatSnackBar } from '@angular/material';
+import { ErrorMessageComponent } from 'src/app/components/common/error-message/error-message.component';
 
 @Component({
   selector: 'app-santosh-interior-our-clients',
@@ -9,16 +12,17 @@ import { IOurClientData } from 'src/app/interfaces/our-clients-data';
 export class SantoshInteriorOurClientsComponent implements OnInit {
 
   public ourClients: IOurClientData[];
-  constructor() { }
+
+  constructor(private santoshService: SantoshInteriorService, private snackBar: MatSnackBar) { }
 
   ngOnInit() {
 
-    this.ourClients = [
-      { location: 'Thane', work: 'Pipe Fitting' },
-      { location: 'Airoli', work: 'Kitchen' },
-      { location: 'Mulund', work: 'Kitchen' },
-      { location: 'Kalwa', work: 'Kitchen' }
-    ];
+    this.santoshService.getSantoshInteriorOurClientsComponentData().subscribe(result => {
+      this.ourClients = result;
+    },
+      _err => {
+        this.snackBar.openFromComponent(ErrorMessageComponent);
+      });
   }
 
 }

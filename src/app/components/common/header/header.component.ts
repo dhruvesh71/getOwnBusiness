@@ -13,9 +13,10 @@ export class HeaderComponent implements OnInit {
   constructor() {
 
     this.headerButtons = [
-      { buttonTitle: 'Home', routerLink: '/santoshInterior/home', showButton: true },
-      { buttonTitle: 'Our Clients', routerLink: '/santoshInterior/clients', showButton: true },
-      { buttonTitle: 'Contact us', routerLink: '/santoshInterior/contact', showButton: true }
+      { buttonTitle: 'Home', routerLink: '/santoshInterior', showButton: true },
+      { buttonTitle: 'What we do', routerLink: '/santoshInterior', showButton: true },
+      { buttonTitle: 'Our Clients', routerLink: '/santoshInterior', showButton: true },
+      { buttonTitle: 'Contact us', routerLink: '/santoshInterior', showButton: true }
     ];
 
     this.headerButtons = this.headerButtons.slice().reverse();

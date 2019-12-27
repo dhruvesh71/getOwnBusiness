@@ -1,0 +1,19 @@
+@import '../../../../styles/styles-common.scss';
+
+body {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+.backgound-image {
+    background         : url("../../../../assets/404.jpg");
+    height             : 100%;
+    width              : $width;
+    position           : fixed;
+    z-index            : -1;
+    background-size    : cover;
+    background-repeat  : no-repeat;
+    background-position: center;
+}
+
+.by_company {
+    margin-left: 35%;
+}

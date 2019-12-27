@@ -10,7 +10,7 @@ export class SantoshInteriorHomeComponent implements OnInit {
   public businessTitle: string;
 
   constructor() {
-    this.businessTitle = 'santosh interior'
+    this.businessTitle = 'santosh interior';
    }
 
   ngOnInit() {
