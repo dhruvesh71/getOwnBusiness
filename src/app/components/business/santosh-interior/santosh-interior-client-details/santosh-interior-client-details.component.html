@@ -1,0 +1,24 @@
+<body>
+
+    <h1 class="w3-center">Client's Details</h1>
+
+    <div class="w3-panel">
+        <div *ngFor="let clientImage of data.imagesUrl">
+            <a href="{{clientImage}}" target="_blank">
+                <img src="{{clientImage}}" alt="clientImage" class="image_dimension"
+                    (click)="window.open('anotherpage.html', '_blank');" />
+            </a>
+        </div>
+
+
+        <div>
+            <p><b>Client Name: </b>{{data.client.clientName}}</p>
+            <p><b>Client location: </b>{{data.client.location}}</p>
+            <p><b>Work done: </b>{{data.client.work}}</p>
+            <p><b>Budget: </b>{{data.client.budget}}</p>
+            <p><b>Number Of Days Took: </b>{{data.client.numberOfDaysTook}}</p>
+            <p><b>When Did The Work Done: </b>{{data.client.whenDidWorkDone}}</p>
+        </div>
+    </div>
+
+</body>

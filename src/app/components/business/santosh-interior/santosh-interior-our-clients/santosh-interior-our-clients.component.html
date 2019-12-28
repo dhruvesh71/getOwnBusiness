@@ -3,16 +3,24 @@
     <div class="w3-center">
         <p>Our Clients
             <mat-divider></mat-divider>
-        <p>
+            <p>
     </div>
 
+    <div *ngFor="let client of ourClients">
 
-    <div *ngFor="let client of ourClients" >
-        
-            <div class="w3-card-4 w3-center cards">
-            <div class="w3-container">
-                <h3>{{client.location}}</h3>
+        <div class="w3-card-4 w3-center cards" (click)="openClientDetails(client)">
+
+            <header class="w3-container w3-blue">
+                <h3>{{client.clientName}}</h3>
+            </header>
+
+            <div>
+                <img src="{{client.imageUrl[0]}}" alt="clients-image" class="image_dimension" />
             </div>
+
+            <footer class="w3-container w3-blue">
+                <h3>{{client.location}}</h3>
+            </footer>
         </div>
     </div>
 </body>

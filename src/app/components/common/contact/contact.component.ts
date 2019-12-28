@@ -20,4 +20,7 @@ export class ContactComponent implements OnInit {
   ngOnInit() {
   }
 
+  public sendMessage() {
+  }
+
 }

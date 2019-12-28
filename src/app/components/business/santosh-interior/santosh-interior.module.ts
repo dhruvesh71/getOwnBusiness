@@ -8,6 +8,7 @@ import { SantoshInteriorOurClientsComponent } from './santosh-interior-our-clien
 import { ContactModule } from '../../common/contact/contact.module';
 import { SantoshInteriorWhatWeDoComponent } from './santosh-interior-what-we-do/santosh-interior-what-we-do.component';
 import { FooterComponent } from '../../common/footer/footer.component';
+import { SantoshInteriorClientDetailsComponent } from './santosh-interior-client-details/santosh-interior-client-details.component';
 
 @NgModule({
   declarations: [
@@ -15,12 +16,14 @@ import { FooterComponent } from '../../common/footer/footer.component';
     SantoshInteriorComponent,
     SantoshInteriorHomeComponent,
     SantoshInteriorOurClientsComponent,
-    SantoshInteriorWhatWeDoComponent
+    SantoshInteriorWhatWeDoComponent,
+    SantoshInteriorClientDetailsComponent
   ],
   imports: [
     CommonModule,
     SantoshInteriorRoutingModule,
     ContactModule,
   ],
+  entryComponents: [SantoshInteriorClientDetailsComponent]
 })
 export class SantoshInteriorModule { }
