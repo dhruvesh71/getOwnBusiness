@@ -11,8 +11,8 @@ export class SantoshInteriorWhatWeDoComponent implements OnInit {
   public description: string;
 
   constructor() {
-    this.title = 'What we do';
-    this.description = 'Santosh Interiors has an working expierence of 10 years in Home interior designing. '
+    this.title = 'What do we do?';
+    this.description = 'Santosh Interiors has an working expierence of 10 years in civil contracting. '
      + 'We take contracts of wall painting, Kitchen furnishing, Tiles, Flooring, Plumbing, Window Sliding,'
      +' Civil contractor.'
    }
