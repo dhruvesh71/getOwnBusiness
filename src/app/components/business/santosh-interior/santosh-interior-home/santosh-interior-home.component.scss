@@ -21,9 +21,27 @@
     span.border {
         background-color: #111;
         color           : #fff;
-        padding         : 18px;
+        padding         : 1rem;
         font-size       : 30px;
         letter-spacing  : 10px;
         opacity         : 0.8;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .caption {
+        span.border {
+            padding: 0rem;
+        }
+    }
+}
+
+@media screen and (max-width: 575px) {
+
+    .caption {
+        span.border {
+            padding: 0rem;
+        }
     }
 }

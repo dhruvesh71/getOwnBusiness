@@ -30,6 +30,7 @@ export class SantoshInteriorOurClientsComponent implements OnInit {
 
   public openClientDetails(client: IOurClientData) {
     this.matDialog.open(SantoshInteriorClientDetailsComponent, {
+      height: "90%",
       data: { client: client, imagesUrl: client.imageUrl }
     });
   }
