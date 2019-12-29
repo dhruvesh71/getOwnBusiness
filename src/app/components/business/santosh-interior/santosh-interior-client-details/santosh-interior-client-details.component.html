@@ -5,8 +5,7 @@
     <div class="w3-panel">
         <div *ngFor="let clientImage of data.imagesUrl">
             <a href="{{clientImage}}" target="_blank">
-                <img src="{{clientImage}}" alt="clientImage" class="image_dimension"
-                    (click)="window.open('anotherpage.html', '_blank');" />
+                <img src="{{clientImage}}" alt="clientImage" class="image_dimension" />
             </a>
         </div>
 

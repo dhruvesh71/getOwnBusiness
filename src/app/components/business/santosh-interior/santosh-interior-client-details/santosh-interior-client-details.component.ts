@@ -9,15 +9,9 @@ import { IOurClientData } from 'src/app/interfaces/our-clients-data';
 })
 export class SantoshInteriorClientDetailsComponent implements OnInit {
 
-  private imagesUrl: string[];
-  
   constructor(public dialogRef: MatDialogRef<SantoshInteriorClientDetailsComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: IOurClientData) {
-     }
-
-  ngOnInit() {
-    this.imagesUrl = this.data.imageUrl;
-      console.log(this.imagesUrl)
+    @Inject(MAT_DIALOG_DATA) public data) {
   }
 
+  ngOnInit() { }
 }

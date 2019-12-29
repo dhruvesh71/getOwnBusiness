@@ -23,7 +23,7 @@ export class SantoshInteriorOurClientsComponent implements OnInit {
     this.santoshService.getSantoshInteriorOurClientsComponentData().subscribe(result => {
       this.ourClients = result;
     },
-      _err => {
+      err => {
         this.snackBar.openFromComponent(ErrorMessageComponent);
       });
   }

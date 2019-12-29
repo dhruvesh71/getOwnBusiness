@@ -8,20 +8,22 @@ body {
             font-weight: 700;
         }
     }
-    
+
     form {
-    
+
         text-align: center;
-    
+        width: 50%;
+        position: relative;
+        left: 25%;
+
         h3 {
             font-size  : 18px;
             font-weight: 700;
         }
-    
+
         p mat-form-field {
             width: 100%;
         }
-    
+
     }
 }
-

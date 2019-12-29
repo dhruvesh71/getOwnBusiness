@@ -4,11 +4,18 @@ import { ErrorPageComponent } from './components/common/error-page/error-page.co
 
 
 const routes: Routes = [
-  { path: 'santoshInterior', loadChildren: () => import('./components/business/santosh-interior/santosh-interior.module').then(m => m.SantoshInteriorModule) },
-  { path: 'error', component: ErrorPageComponent},
+  {
+    path: 'santoshinterior', loadChildren: () => import('./components/business/santosh-interior/santosh-interior.module')
+      .then(m => m.SantoshInteriorModule)
+  },
+  { path: 'error', component: ErrorPageComponent },
+  {
+    path: 'contact', loadChildren: () => import('./components/common/contact/contact.module')
+      .then(m => m.ContactModule)
+  },
   { path: '', component: ErrorPageComponent },
   { path: '**', component: ErrorPageComponent },
-  { path: 'contact', loadChildren: () => import('./components/common/contact/contact.module').then(m => m.ContactModule) },
+
 ];
 
 @NgModule({
