@@ -12,5 +12,4 @@ export interface IOurClientData {
     whenDidWorkDone: string;
 
     imageUrl: string[];
-
 }

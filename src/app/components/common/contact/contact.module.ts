@@ -4,8 +4,10 @@ import { CommonModule } from '@angular/common';
 import { ContactRoutingModule } from './contact-routing.module';
 import { ContactComponent } from './contact.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { MatButtonModule, MatInputModule, MatFormFieldModule, MatSelectModule, 
-  MatDividerModule, MatSnackBarModule, MatDialogModule } from '@angular/material';
+import {
+  MatButtonModule, MatInputModule, MatFormFieldModule, MatSelectModule,
+  MatDividerModule, MatSnackBarModule, MatDialogModule, MatExpansionModule, MatCardModule, MatTabsModule
+} from '@angular/material';
 
 @NgModule({
   declarations: [ContactComponent],
@@ -14,8 +16,9 @@ import { MatButtonModule, MatInputModule, MatFormFieldModule, MatSelectModule,
     ContactRoutingModule,
     ReactiveFormsModule,
     MatButtonModule, MatInputModule, MatFormFieldModule,
-    MatSelectModule, MatDividerModule, MatSnackBarModule, MatDialogModule
+    MatSelectModule, MatDividerModule, MatSnackBarModule, MatDialogModule,
+    MatExpansionModule, MatCardModule, MatTabsModule
   ],
-  exports: [ContactComponent, MatDividerModule]
+  exports: [ContactComponent, MatDividerModule, MatExpansionModule, MatCardModule, MatTabsModule]
 })
 export class ContactModule { }

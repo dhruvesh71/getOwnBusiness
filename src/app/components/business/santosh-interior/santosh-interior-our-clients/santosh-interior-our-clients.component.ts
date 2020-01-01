@@ -1,7 +1,7 @@
-import { Component, OnInit, ErrorHandler } from '@angular/core';
+import { Component, OnInit, ErrorHandler, ViewChild } from '@angular/core';
 import { IOurClientData } from 'src/app/interfaces/our-clients-data';
 import { SantoshInteriorService } from '../service/santosh-interior.service';
-import { MatSnackBar } from '@angular/material';
+import { MatSnackBar, MatTableDataSource, MatPaginator } from '@angular/material';
 import { ErrorMessageComponent } from 'src/app/components/common/error-message/error-message.component';
 import { MatDialog } from '@angular/material/dialog';
 import { SantoshInteriorClientDetailsComponent } from '../santosh-interior-client-details/santosh-interior-client-details.component';
@@ -14,25 +14,56 @@ import { SantoshInteriorClientDetailsComponent } from '../santosh-interior-clien
 export class SantoshInteriorOurClientsComponent implements OnInit {
 
   public ourClients: IOurClientData[];
+  public ourClientsLocation: string[];
+  private ourClientsForSpecificLocation: IOurClientData[];
 
-  constructor(private santoshService: SantoshInteriorService, private snackBar: MatSnackBar,
-    private matDialog: MatDialog) { }
+  constructor(private santoshService: SantoshInteriorService, private snackBar: MatSnackBar, private matDialog: MatDialog) { }
 
   ngOnInit() {
-
-    this.santoshService.getSantoshInteriorOurClientsComponentData().subscribe(result => {
-      this.ourClients = result;
-    },
-      err => {
-        this.snackBar.openFromComponent(ErrorMessageComponent);
-      });
+    this.getClientDetails();
   }
 
-  public openClientDetails(client: IOurClientData) {
+  public openClientDetails(client: IOurClientData): void {
     this.matDialog.open(SantoshInteriorClientDetailsComponent, {
-      height: "90%",
+      height: '90%',
       data: { client: client, imagesUrl: client.imageUrl }
     });
   }
 
+  public getClientsByLocation(clientsLocation: string): IOurClientData[] {
+
+    this.ourClientsForSpecificLocation = [];
+
+    this.ourClients.forEach(client => {
+
+      if (client.location === clientsLocation) {
+        this.ourClientsForSpecificLocation.push(client);
+      }
+    });
+
+    return this.ourClientsForSpecificLocation;
+  }
+
+
+  private getClientDetails() {
+
+    this.santoshService.getSantoshInteriorOurClientsComponentData().subscribe(result => {
+      this.ourClients = result;
+      this.getClientsLocation();
+    }, err => {
+      this.snackBar.openFromComponent(ErrorMessageComponent);
+    });
+  }
+
+  private getClientsLocation() {
+
+    this.ourClientsLocation = [];
+
+    for (const client of this.ourClients) {
+
+      if (!(this.ourClientsLocation.includes(client.location))) {
+        this.ourClientsLocation.push(client.location);
+      }
+    }
+  }
 }

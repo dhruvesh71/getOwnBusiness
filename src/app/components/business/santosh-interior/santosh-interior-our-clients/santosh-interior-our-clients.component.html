@@ -1,26 +1,31 @@
 <body>
 
-    <div class="w3-center">
-        <p>Our Clients
+    <div>
+        <p>Clients
             <mat-divider></mat-divider>
-            <p>
+        <p>
     </div>
 
-    <div *ngFor="let client of ourClients">
 
-        <div class="w3-card-4 w3-center cards" (click)="openClientDetails(client)">
-
-            <header class="w3-container w3-blue">
-                <h5>{{client.clientName}}</h5>
-            </header>
-
-            <div>
-                <img src="{{client.imageUrl[0]}}" alt="clients-image" class="image_dimension" />
+    <mat-tab-group>
+            <div *ngFor="let location of ourClientsLocation">
+                <mat-tab label={{location}}>
+                    <div *ngFor="let client of getClientsByLocation(location)">
+                <mat-card (click)="openClientDetails(client)" class="cards">
+                    <mat-card-header>
+                        <mat-card-title>{{client.clientName}}</mat-card-title>
+                        <mat-card-subtitle>{{client.location}}&nbsp;&nbsp;</mat-card-subtitle>
+                    </mat-card-header>
+                    <mat-card-content>
+                        <img mat-card-image src="{{client.imageUrl[0]}}" alt="clients-image" class="image_dimension" />
+                    </mat-card-content>
+                </mat-card>
             </div>
+            </mat-tab>
+            </div>
+    </mat-tab-group>
 
-            <footer class="w3-container w3-blue">
-                <h5>{{client.location}}</h5>
-            </footer>
-        </div>
-    </div>
+
+
+
 </body>

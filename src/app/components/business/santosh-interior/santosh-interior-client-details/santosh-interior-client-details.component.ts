@@ -1,6 +1,5 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
-import { IOurClientData } from 'src/app/interfaces/our-clients-data';
 
 @Component({
   selector: 'app-santosh-interior-client-details',

@@ -1,13 +1,18 @@
-div.w3-center {
+div{
     p {
+        letter-spacing  : 2px;
         font-size  : xx-large;
-        font-weight: 700;
+        font-weight: 800;
     }
 }
 
 .frame_dimensions {
     width : 30%;
     height: 50%;
+}
+
+mat-expansion-panel {
+    background-color: #e9ecef;
 }
 
 @media screen and (max-width: 767px) {

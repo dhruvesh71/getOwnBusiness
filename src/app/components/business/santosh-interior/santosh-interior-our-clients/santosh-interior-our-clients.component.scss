@@ -1,14 +1,16 @@
-div.w3-center {
+div {
     p {
+        letter-spacing: 2px;
         font-size  : xx-large;
-        font-weight: 700;
+        font-weight: 800;
     }
 }
 
 .cards {
-    width : 20%;
-    margin: 2%;
-    float : left;
+    max-width: 400px;
+    margin: 1%;
+    background-color: #e9ecef;
+    float: left;
 }
 
 .cards :hover {
@@ -16,23 +18,13 @@ div.w3-center {
 }
 
 .image_dimension {
-    width : 100%;
-    height: 20rem;
+    height: 300px;
 }
 
 @media screen and (max-width: 767px) {
-    .cards {
-        h5 {
-            font-size: 8px;
-        }
-    }
 }
 
 @media screen and (max-width: 575px) {
 
-    .cards {
-        h5 {
-            font-size: 8px;
-        }
-    }
 }
+

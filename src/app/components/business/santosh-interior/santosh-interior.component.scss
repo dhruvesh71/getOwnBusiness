@@ -1,15 +1,35 @@
+@import '../../../../styles/styles-common.scss';
+
 .home {
     height: 100%;
 }
 
 .what_we_do_background {
-    background-color: #ccdee6;
+    background         : url("../../../../assets/santoshInteriors/about.jpg");
+    width              : $width;
+    position           : relative;
+    background-size    : cover;
+    background-repeat  : no-repeat;
+    background-position: center;
+    color: white;
 }
 
 .client_background {
-    background-color: #acd3e6;
+    background         : url("../../../../assets/santoshInteriors/client.jpg");
+    width              : $width;
+    position           : relative;
+    background-size    : cover;
+    background-repeat  : no-repeat;
+    background-position: center;
+    height: 100%;   
 }
 
 .contact_background {
-    background-color: #a1c2cf;
+    background         : url("../../../../assets/santoshInteriors/connect.jpg");
+    height             : 100%;
+    width              : $width;
+    position           : relative;
+    background-size    : cover;
+    background-repeat  : no-repeat;
+    background-position: center;
 }

@@ -1,14 +1,15 @@
 <body class="w3-container">
 
-    <div class="w3-center">
+    <div>
         <p>Let's Connect
             <mat-divider></mat-divider>
-        <p>
+            <p>
+                <h4>Add your query and we will contact you</h4>
     </div>
 
-    <form [formGroup]="contactFormGroup" class="w3-center">
+    <form [formGroup]="contactFormGroup" class="w3-center w3-panel">
 
-        <h3>Add your query and we will contact you</h3>
+       
         <p>
             <mat-form-field appearance="outline">
                 <mat-label>Name</mat-label>
@@ -36,7 +37,8 @@
             </mat-form-field>
         </p>
 
-        <button mat-raised-button color="primary" click="sendMessage()">Contact me</button>
+        <button mat-raised-button click="sendMessage()">Send Query</button>
+        
     </form>
     &nbsp;&nbsp;
 </body>
