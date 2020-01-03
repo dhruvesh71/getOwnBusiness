@@ -1,15 +1,14 @@
 [
     {
-        "clientName": "Kamdhenu Apartment",
-        "location": "Mulund",
-        "work": "",
-        "numberOfDaysTook": "",
-        "whenDidWorkDone": "",
+        "clientName": " Kamdhenu Apartment",
+        "location": "Airoli",
+        "work": "Home Furniture",
+        "numberOfDaysTook": "1.5 month",
+        "whenDidWorkDone": "Jun-2019",
         "imageUrl": [
-            "../../../../../assets/santoshInteriors/kamdhenu_apartment/Kamdhenu_apartment_1.jpg",
-            "../../../../../assets/santoshInteriors/kamdhenu_apartment/Kamdhenu_apartment_2.jpg",
-            "../../../../../assets/santoshInteriors/kamdhenu_apartment/Kamdhenu_apartment_3.jpg",
-            "../../../../../assets/santoshInteriors/kamdhenu_apartment/Kamdhenu_apartment_4.jpg"
+            "../../../../../assets/santoshInteriors/client3/1.jpg",
+            "../../../../../assets/santoshInteriors/client3/2.jpg",
+            "../../../../../assets/santoshInteriors/client3/3.jpg"
         ]
     },
     {
@@ -28,21 +27,23 @@
     },
     {
         "clientName": "Shreeram securities",
-        "location": "Airoli",
-        "work": "Tile fitting",
-        "numberOfDaysTook": "1.5 month",
-        "whenDidWorkDone": "Jun-2019",
+        "location": "Mulund",
+        "work": "Wall painting",
+        "numberOfDaysTook": "8 days",
+        "whenDidWorkDone": "Aug-2019",
         "imageUrl": [
-            "../../../../../assets/santoshInteriors/client3/1.jpg",
-            "../../../../../assets/santoshInteriors/client3/2.jpg",
-            "../../../../../assets/santoshInteriors/client3/3.jpg"
+            "../../../../../assets/santoshInteriors/kamdhenu_apartment/Kamdhenu_apartment_1.jpg",
+            "../../../../../assets/santoshInteriors/kamdhenu_apartment/Kamdhenu_apartment_2.jpg",
+            "../../../../../assets/santoshInteriors/kamdhenu_apartment/Kamdhenu_apartment_3.jpg",
+            "../../../../../assets/santoshInteriors/kamdhenu_apartment/Kamdhenu_apartment_4.jpg"
         ]
     },
+    
     {
         "clientName": "Raja",
         "location": "Vashi",
-        "work": "Pipeline",
-        "numberOfDaysTook": "3 month",
+        "work": "House Renovation",
+        "numberOfDaysTook": "3.5 months",
         "whenDidWorkDone": "Jan-2018",
         "imageUrl": [
             "../../../../../assets/santoshInteriors/client4/1.jpg",

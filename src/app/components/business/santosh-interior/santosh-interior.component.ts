@@ -12,4 +12,7 @@ export class SantoshInteriorComponent implements OnInit {
   ngOnInit() {
   }
 
+  scrollToPage(page: HTMLElement) {
+    page.scrollIntoView({ behavior: 'smooth' });
+  }
 }

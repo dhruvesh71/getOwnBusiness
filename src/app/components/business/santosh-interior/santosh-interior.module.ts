@@ -7,17 +7,17 @@ import { SantoshInteriorHomeComponent } from './santosh-interior-home/santosh-in
 import { SantoshInteriorOurClientsComponent } from './santosh-interior-our-clients/santosh-interior-our-clients.component';
 import { ContactModule } from '../../common/contact/contact.module';
 import { SantoshInteriorWhatWeDoComponent } from './santosh-interior-what-we-do/santosh-interior-what-we-do.component';
-import { FooterComponent } from '../../common/footer/footer.component';
 import { SantoshInteriorClientDetailsComponent } from './santosh-interior-client-details/santosh-interior-client-details.component';
+import { SantoshInteriorFooterComponent } from './santosh-interior-footer/santosh-interior-footer.component';
 
 @NgModule({
   declarations: [
-    FooterComponent,
     SantoshInteriorComponent,
     SantoshInteriorHomeComponent,
     SantoshInteriorOurClientsComponent,
     SantoshInteriorWhatWeDoComponent,
-    SantoshInteriorClientDetailsComponent
+    SantoshInteriorClientDetailsComponent,
+    SantoshInteriorFooterComponent,
   ],
   imports: [
     CommonModule,

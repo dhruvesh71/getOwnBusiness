@@ -1,18 +1,19 @@
 @import '../../../../styles/styles-common.scss';
 
 body {
-    color: $white;
 
     div {
         p {
             font-size     : xx-large;
             font-weight   : 800;
             letter-spacing: 2px;
+            color         : $white;
         }
 
         h4 {
             font-size  : 1rem;
             font-weight: 700;
+            color      : $white;
         }
     }
 
@@ -25,7 +26,6 @@ body {
         background-color: white;
         opacity         : 0.8;
 
-
         p mat-form-field {
             width: 100%;
         }
@@ -35,20 +35,17 @@ body {
             color           : white;
             margin-bottom   : 2%;
         }
-
     }
 }
 
 @media screen and (max-width: 575px) {
 
     body {
-    
+
         form {
-            width           : 85%;
-            position        : relative;
-            left            : 10%;
-    
-    
+            width   : 85%;
+            position: relative;
+            left    : 10%;
         }
     }
 

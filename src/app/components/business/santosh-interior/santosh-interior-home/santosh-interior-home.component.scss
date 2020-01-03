@@ -1,16 +1,3 @@
-@import '../../../../../styles/styles-common.scss';
-
-.backgound-image {
-    background         : url("../../../../../assets/santoshInteriors/home.jpg");
-    height             : 100%;
-    width              : $width;
-    position           : relative;
-    z-index            : -1;
-    background-size    : cover;
-    background-repeat  : no-repeat;
-    background-position: center;
-}
-
 .caption {
     position  : relative;
     left      : 0;

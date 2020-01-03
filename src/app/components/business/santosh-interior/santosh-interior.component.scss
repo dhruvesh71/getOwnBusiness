@@ -1,7 +1,13 @@
 @import '../../../../styles/styles-common.scss';
 
 .home {
-    height: 100%;
+    background         : url("../../../../assets/santoshInteriors/home.jpg");
+    height             : 100vh;
+    width              : $width;
+    position           : relative;
+    background-size    : cover;
+    background-repeat  : no-repeat;
+    background-position: center;
 }
 
 .what_we_do_background {
@@ -21,15 +27,67 @@
     background-size    : cover;
     background-repeat  : no-repeat;
     background-position: center;
-    height: 100%;   
 }
 
 .contact_background {
     background         : url("../../../../assets/santoshInteriors/connect.jpg");
-    height             : 100%;
     width              : $width;
     position           : relative;
     background-size    : cover;
     background-repeat  : no-repeat;
     background-position: center;
+}
+
+header {
+    width: 100%;
+    background-color: rgba(0,0,0,.2);
+}
+
+.header ul {
+    text-align: end;
+
+    li {
+        list-style: none;
+        display   : inline-block;
+
+        a {
+            display        : block;
+            text-decoration: none;
+            text-transform : uppercase;
+            color          : #fff;
+            font-size      : 16px;
+            font-family    : 'Raleway', sans-serif;
+            letter-spacing : 2px;
+            font-weight    : 600;
+            padding        : 20px;
+            transition     : all ease 0.5s;
+        }
+
+        a:hover {
+            cursor: pointer;
+            background-color: #5b97b5;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .header ul {
+        li {
+            a {
+                padding: 6px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 575px) {
+
+    .header ul {
+        li {
+            a {
+                padding: 4px;
+            }
+        }
+    }
 }
