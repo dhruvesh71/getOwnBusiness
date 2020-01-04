@@ -4,20 +4,26 @@
     <mat-divider></mat-divider>
 
     <div class="w3-panel">
-        <div *ngFor="let clientImage of data.imagesUrl">
-            <a href="{{clientImage}}" target="_blank">
-                <img src="{{clientImage}}" alt="clientImage" class="image_dimension" />
-            </a>
-        </div>
 
-
-        <div>
+        <div class="client_info">
             <p><b>Client Name: </b>{{data.client.clientName}}</p>
             <p><b>Client location: </b>{{data.client.location}}</p>
             <p><b>Work done: </b>{{data.client.work}}</p>
             <p><b>Number Of Days Took: </b>{{data.client.numberOfDaysTook}}</p>
             <p><b>When Did The Work Done: </b>{{data.client.whenDidWorkDone}}</p>
         </div>
+
+
+        <mat-tab-group>
+            <mat-tab label="images">
+                <div *ngFor="let clientImage of data.imagesUrl">
+                    <a href="{{clientImage}}" target="_blank">
+                        <img src="{{clientImage}}" alt="clientImage" class="image_dimension" />
+                    </a>
+                </div>
+            </mat-tab>
+        </mat-tab-group>
+
     </div>
 
 </body>
