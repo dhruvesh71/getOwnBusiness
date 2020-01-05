@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 @Component({
-  selector: 'app-contact',
-  templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.scss']
+  selector: 'app-santosh-interior-contact',
+  templateUrl: './santosh-interior-contact.component.html',
+  styleUrls: ['./santosh-interior-contact.component.scss']
 })
-export class ContactComponent implements OnInit {
+export class SantoshInteriorContactComponent implements OnInit {
 
   public errorMessage = 'Kindly fill this feild';
 
@@ -22,5 +22,4 @@ export class ContactComponent implements OnInit {
 
   public sendMessage() {
   }
-
 }

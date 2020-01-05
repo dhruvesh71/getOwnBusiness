@@ -1,0 +1,53 @@
+<body class="w3-container">
+
+    <div>
+        <p>Let's Connect
+
+            <span class="w3-right contact_icons">
+                <a href="/" title="facebook"> <i class="fa fa-facebook-f"></i></a>
+                &nbsp;
+                <a href="https://www.google.com/search?q=santoshinterior&oq=san&aqs=chrome.1.69i60j69i59l2j69i57j69i59l2j69i60l2.1907j0j4&sourceid=chrome&ie=UTF-8&sxsrf=ACYBGNSRx3YbCa2oyLAH3nhLmPtjELIqKw:1578218752958&npsic=0&rflfq=1&rlha=0&rllag=19227498,72981582,11484&tbm=lcl&rldimm=15890716642800034268&ved=2ahUKEwiei5eBm-zmAhWWc30KHU0mBZEQvS4wAHoECAsQJg&rldoc=1&tbs=lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!1m4!1u16!2m2!16m1!1e1!1m4!1u16!2m2!16m1!1e2!2m1!1e2!2m1!1e16!2m1!1e3!3sIAE,lf:1,lf_ui:14&rlst=f#rlfi=hd:;si:15890716642800034268;mv:[[19.2479051,73.10224509999999],[19.2070921,72.8609202]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!1m4!1u16!2m2!16m1!1e1!1m4!1u16!2m2!16m1!1e2!2m1!1e2!2m1!1e16!2m1!1e3!3sIAE,lf:1,lf_ui:14"
+                    title="google" target="_blank"> <i class="fa fa-google"></i></a>
+            </span>
+
+            <mat-divider></mat-divider>
+
+            <p>
+                <h4>Add your query and we will contact you</h4>
+    </div>
+
+    <form [formGroup]="contactFormGroup" class="w3-center w3-panel">
+
+
+        <p>
+            <mat-form-field appearance="outline">
+                <mat-label>Name</mat-label>
+                <input matInput placeholder="Santosh Kumar" aria-label="Name" formControlName="name" maxlength="30"
+                    required />
+                <mat-error>{{errorMessage}}</mat-error>
+            </mat-form-field>
+        </p>
+
+        <p>
+            <mat-form-field appearance="outline">
+                <mat-label>Regarding</mat-label>
+                <textarea matInput placeholder="Need to refurnish my house" aria-label="Regarding"
+                    formControlName="regarding" required></textarea>
+                <mat-error>{{errorMessage}}</mat-error>
+            </mat-form-field>
+        </p>
+
+        <p>
+            <mat-form-field appearance="outline">
+                <mat-label>Your Contact</mat-label>
+                <input type="number" matInput placeholder="1234567890" aria-label="Regarding"
+                    formControlName="contactNumber" maxlength="10" required />
+                <mat-error>{{errorMessage}}</mat-error>
+            </mat-form-field>
+        </p>
+
+        <button mat-raised-button click="sendMessage()">Send Query</button>
+
+    </form>
+    &nbsp;&nbsp;
+</body>

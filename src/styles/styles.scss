@@ -1,6 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 @import 'w3-css/w3.css';
 @import '@angular/material/prebuilt-themes/indigo-pink.css';
+$fa-font-path: "~font-awesome/fonts";
+ @import '~font-awesome/scss/font-awesome';
 
 :host {
     font-family            : -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";

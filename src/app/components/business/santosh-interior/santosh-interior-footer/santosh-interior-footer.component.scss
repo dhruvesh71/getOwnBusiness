@@ -26,23 +26,27 @@ body {
     a {
         font-size      : 45px;
         font-weight    : 800;
-        letter-spacing : 4px;
+        letter-spacing : 5px;
         text-decoration: none;
     }
 }
 
 .contact {
 
-ul {
-    display: inline-block;
-    li {
-        list-style: none;
-        margin-top: 6%;
+    text-align: right;
 
-        a {
-            display        : block;
-            text-decoration: none;
+    ul {
+        display   : inline-block;
+        text-align: left;
+
+        li {
+            list-style: none;
+            margin-top: 6%;
+
+            a {
+                display        : block;
+                text-decoration: none;
+            }
         }
     }
-}
 }

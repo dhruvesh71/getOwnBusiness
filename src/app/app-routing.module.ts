@@ -9,10 +9,6 @@ const routes: Routes = [
       .then(m => m.SantoshInteriorModule)
   },
   { path: 'error', component: ErrorPageComponent },
-  {
-    path: 'contact', loadChildren: () => import('./components/common/contact/contact.module')
-      .then(m => m.ContactModule)
-  },
   { path: '', component: ErrorPageComponent },
   { path: '**', component: ErrorPageComponent },
 
