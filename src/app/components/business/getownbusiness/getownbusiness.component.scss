@@ -1,0 +1,72 @@
+.home {
+    background         : url("../../../../assets/getownbusiness/getownbusiness_home.jpg");
+    height             : 100vh;
+    width              : 100%;
+    position           : relative;
+    background-size    : cover;
+    background-repeat  : no-repeat;
+    background-position: center;
+}
+
+.header {
+    border-bottom: 1px solid #dfdfdf;
+    height: 10%;
+    background-color: #06D199;;
+}
+
+.powered_by a{
+
+    font-family    : 'Qwigley', cursive !important;
+    font-size      : 25px;
+    font-weight    : 600;
+    letter-spacing : 5px;
+    text-decoration: none;
+}
+
+.header ul {
+
+    li {
+        list-style: none;
+        display   : inline-block;
+
+        a {
+            display        : block;
+            text-decoration: none;
+            text-transform : uppercase;
+            font-size      : 16px;
+            font-family    : 'Raleway', sans-serif;
+            letter-spacing : 2px;
+            font-weight    : 600;
+            padding        : 20px;
+            transition     : all ease 0.5s;
+        }
+
+        a:hover {
+            cursor          : pointer;
+            background-color: #5b97b5;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .header ul {
+        li {
+            a {
+                padding: 6px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 575px) {
+
+    .header ul {
+        li {
+            a {
+                padding: 4px;
+            }
+        }
+    }
+}
+

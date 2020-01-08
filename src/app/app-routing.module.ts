@@ -5,12 +5,17 @@ import { ErrorPageComponent } from './components/common/error-page/error-page.co
 
 const routes: Routes = [
   {
+    path: 'getownbusiness', loadChildren: () => import('./components/business/getownbusiness/getownbusiness.module')
+      .then(m => m.GetownbusinessModule)
+  },
+  {
     path: 'santoshinterior', loadChildren: () => import('./components/business/santosh-interior/santosh-interior.module')
       .then(m => m.SantoshInteriorModule)
   },
   { path: 'error', component: ErrorPageComponent },
-  { path: '', component: ErrorPageComponent },
+  { path: '', redirectTo: 'getownbusiness', pathMatch: 'full' },
   { path: '**', component: ErrorPageComponent },
+
 
 ];
 

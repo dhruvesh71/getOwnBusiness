@@ -12,6 +12,7 @@ export class SantoshInteriorService {
 
   public getSantoshInteriorOurClientsComponentData(): Observable<IOurClientData[]> {
 
-    return this.http.get<IOurClientData[]>('../../../../../assets/json/client_data.json');
+    return this.http.get<IOurClientData[]>
+      ('../../../../../assets/json/santosh_interior_client_data.json');
   }
 }
