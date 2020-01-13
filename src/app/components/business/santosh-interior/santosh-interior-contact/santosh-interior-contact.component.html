@@ -33,7 +33,7 @@
             <mat-form-field appearance="outline">
                 <mat-label>Regarding</mat-label>
                 <textarea matInput placeholder="Need to refurnish my house" aria-label="Regarding"
-                    formControlName="regarding" required></textarea>
+                    formControlName="regarding" maxlength="250" required></textarea>
                 <mat-error>{{errorMessage}}</mat-error>
             </mat-form-field>
         </p>
@@ -41,13 +41,13 @@
         <p>
             <mat-form-field appearance="outline">
                 <mat-label>Your Contact</mat-label>
-                <input type="number" matInput placeholder="1234567890" aria-label="Regarding"
+                <input matInput placeholder="1234567890" aria-label="Regarding"
                     formControlName="contactNumber" maxlength="10" required />
                 <mat-error>{{errorMessage}}</mat-error>
             </mat-form-field>
         </p>
 
-        <button mat-raised-button click="sendMessage()">Send Query</button>
+        <button mat-raised-button (click)="sendMessage()">Send Query</button>
 
     </form>
     &nbsp;&nbsp;

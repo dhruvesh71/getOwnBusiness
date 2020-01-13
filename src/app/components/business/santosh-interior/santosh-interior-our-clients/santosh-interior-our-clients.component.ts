@@ -50,9 +50,10 @@ export class SantoshInteriorOurClientsComponent implements OnInit {
     this.santoshService.getSantoshInteriorOurClientsComponentData().subscribe(result => {
       this.ourClients = result;
       this.getClientsLocation();
-    }, err => {
-      this.snackBar.openFromComponent(ErrorMessageComponent);
-    });
+    },
+      _err => {
+        this.snackBar.openFromComponent(ErrorMessageComponent, { data: { message: 'Error occured while processing..Kindly try again in sometime' } });
+      });
   }
 
   private getClientsLocation() {
