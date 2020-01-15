@@ -1,0 +1,25 @@
+body {
+    font-family: 'Muli', sans-serif;
+}
+
+.title {
+    font-family: 'Muli', sans-serif;
+    font-weight: 900;
+    text-align : center;
+
+    mat-divider {
+        background-color: #000000;
+        opacity         : 0.3;
+    }
+}
+
+.clients_logo {
+    a {
+
+        img {
+            margin-top: 5%;
+            width: 50%;
+        }
+    }
+
+}

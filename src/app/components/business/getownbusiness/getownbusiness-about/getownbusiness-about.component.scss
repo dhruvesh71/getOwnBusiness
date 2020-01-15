@@ -1,0 +1,22 @@
+body {
+    font-family: 'Muli', sans-serif;
+}
+
+.heading {
+    text-align: center;
+    margin-top: 20%;
+
+    .title {
+        font-size: xx-large;
+    }
+
+    .subtitle {
+        font-size: x-large;
+        
+        ol{
+            li {
+                list-style-type: none;
+            }
+        }
+    }
+}

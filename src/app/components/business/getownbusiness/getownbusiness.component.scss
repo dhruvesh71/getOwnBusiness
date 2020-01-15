@@ -1,20 +1,46 @@
 .home {
-    background         : url("../../../../assets/getownbusiness/getownbusiness_home.jpg");
+    background         : url("../../../../assets/getownbusiness/gob_home.jpg");
     height             : 100vh;
     width              : 100%;
     position           : relative;
     background-size    : cover;
     background-repeat  : no-repeat;
     background-position: center;
+    opacity            : 0.9;
+}
+
+.about {
+    background-color: #e9ecef;
+    height          : 100vh;
+    width           : 100%;
+
+    .about_img {
+        margin-left: 5%;
+        margin-right: 10%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        height    : 90%;
+        width     : 90%;
+        box-shadow: red
+    }
+
+}
+
+
+.clients {
+    background-color: #e9ecef;
+    height: 100vh;
+    width : 100%;
 }
 
 .header {
-    border-bottom: 1px solid #dfdfdf;
-    height: 10%;
-    background-color: #06D199;;
+    border-bottom   : 1px solid #dfdfdf;
+    height          : 10%;
+    background-color: #06D199;
+    ;
 }
 
-.powered_by a{
+.powered_by a {
 
     font-family    : 'Qwigley', cursive !important;
     font-size      : 25px;
@@ -69,4 +95,3 @@
         }
     }
 }
-

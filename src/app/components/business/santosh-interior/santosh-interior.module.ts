@@ -9,11 +9,7 @@ import { SantoshInteriorWhatWeDoComponent } from './santosh-interior-what-we-do/
 import { SantoshInteriorClientDetailsComponent } from './santosh-interior-client-details/santosh-interior-client-details.component';
 import { SantoshInteriorFooterComponent } from './santosh-interior-footer/santosh-interior-footer.component';
 import { SantoshInteriorContactComponent } from './santosh-interior-contact/santosh-interior-contact.component';
-import { ReactiveFormsModule } from '@angular/forms';
-import {
-  MatButtonModule, MatInputModule, MatFormFieldModule, MatSelectModule,
-  MatDividerModule, MatSnackBarModule, MatDialogModule, MatExpansionModule, MatCardModule, MatTabsModule
-} from '@angular/material';
+import { AngularMaterialModule } from '../../../modules/angular-material/angular-material.module'
 
 @NgModule({
   declarations: [
@@ -28,11 +24,8 @@ import {
   imports: [
     CommonModule,
     SantoshInteriorRoutingModule,
-    ReactiveFormsModule,
-    MatButtonModule, MatInputModule, MatFormFieldModule,
-    MatSelectModule, MatDividerModule, MatSnackBarModule, MatDialogModule,
-    MatExpansionModule, MatCardModule, MatTabsModule
+    AngularMaterialModule
   ],
-  entryComponents: [SantoshInteriorClientDetailsComponent]
+  entryComponents: [SantoshInteriorClientDetailsComponent],
 })
 export class SantoshInteriorModule { }
