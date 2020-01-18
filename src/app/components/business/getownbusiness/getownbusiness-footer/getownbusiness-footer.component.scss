@@ -1,0 +1,52 @@
+body {
+    background-color: #000000;
+    color           : white;
+
+    div.w3-left {
+        font-size  : 12px;
+        font-weight: bold;
+        width      : 50%;
+
+        nav a {
+            text-decoration: none;
+        }
+    }
+
+    div.w3-right {
+        font-size  : 14px;
+        font-weight: bold;
+    }
+}
+
+.powered_by {
+    font-family: 'Qwigley', cursive;
+    font-size  : 20px;
+    font-weight: 600;
+
+    a {
+        font-size      : 45px;
+        font-weight    : 800;
+        letter-spacing : 5px;
+        text-decoration: none;
+    }
+}
+
+.contact {
+
+    text-align: right;
+
+    ul {
+        display   : inline-block;
+        text-align: left;
+
+        li {
+            list-style: none;
+            margin-top: 6%;
+
+            a {
+                display        : block;
+                text-decoration: none;
+            }
+        }
+    }
+}

@@ -8,14 +8,22 @@ body {
     top     : 30%;
 
     .title {
+        font-family   : 'Qwigley', cursive;
         margin        : 0;
         text-align    : center;
         letter-spacing: 10px;
-        font-size     : xx-large;
+        font-size     : 6rem;
     }
+}
 
-    .sub_title {
-        font-size     : large;
+@media screen and (max-width: 767px) {}
 
+@media screen and (max-width: 575px) {
+
+    .heading {
+    
+        .title {
+            font-size     : 3rem;
+        }
     }
 }

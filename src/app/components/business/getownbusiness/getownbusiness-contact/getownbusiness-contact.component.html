@@ -1,0 +1,45 @@
+<body class="w3-container">
+
+    <div class="w3-content heading">
+        <h3 class="title">Let us know what you think </h3>
+        <p>Help us to improve by providing your feedback.</p>
+    </div>
+    
+
+    <div>
+        <form [formGroup]="contactFormGroup" class="w3-center w3-panel">
+
+
+            <p>
+                <mat-form-field appearance="outline">
+                    <mat-label>Your Name</mat-label>
+                    <input matInput placeholder="Alex" aria-label="Name" formControlName="name" maxlength="30"
+                        required />
+                    <mat-error>{{errorMessage}}</mat-error>
+                </mat-form-field>
+            </p>
+
+            <p>
+                <mat-form-field appearance="outline">
+                    <mat-label>Message</mat-label>
+                    <textarea matInput placeholder="Your Message" aria-label="Your Message" formControlName="regarding"
+                        maxlength="250" required></textarea>
+                    <mat-error>{{errorMessage}}</mat-error>
+                </mat-form-field>
+            </p>
+
+            <p>
+                <mat-form-field appearance="outline">
+                    <mat-label>Your Contact</mat-label>
+                    <input matInput placeholder="1234567890" aria-label="Your Contact" formControlName="contactNumber"
+                        maxlength="10" required />
+                    <mat-error>{{errorMessage}}</mat-error>
+                </mat-form-field>
+            </p>
+
+            <button mat-raised-button (click)="sendMessage()">Send</button>
+
+        </form>
+    </div>
+    &nbsp;&nbsp;
+</body>

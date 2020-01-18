@@ -12,7 +12,8 @@ export const environment = {
     storageBucket: "getownbusiness-2a1b2.appspot.com",
     messagingSenderId: "747688546908",
     appId: "1:747688546908:web:adc9cdca81a5f0f19a8c99",
-    measurementId: "G-1JSRYL1E79"
+    measurementId: "G-1JSRYL1E79",
+    production: true,
   }
 };
 

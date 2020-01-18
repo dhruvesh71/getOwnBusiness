@@ -9,28 +9,31 @@
     opacity            : 0.9;
 }
 
-.about {
-    background-color: #e9ecef;
-    height          : 100vh;
-    width           : 100%;
-
-    .about_img {
-        margin-left: 5%;
-        margin-right: 10%;
-        margin-top: 10%;
-        margin-bottom: 10%;
-        height    : 90%;
-        width     : 90%;
-        box-shadow: red
-    }
-
+.about_one {
+    width: 100%;
 }
 
+.about_two {
+    width: 100%;
+}
 
-.clients {
-    background-color: #e9ecef;
+.about_three {
     height: 100vh;
     width : 100%;
+}
+
+.clients {
+    height: 50vh;
+    width : 100%;
+}
+
+.contact {
+    background         : url("../../../../assets/getownbusiness/gob_contact.jpg");
+    width              : 100%;
+    position           : relative;
+    background-size    : cover;
+    background-repeat  : no-repeat;
+    background-position: center;
 }
 
 .header {

@@ -6,7 +6,12 @@ import { GetownbusinessComponent } from './getownbusiness.component';
 import { GetownbusinessHomeComponent } from './getownbusiness-home/getownbusiness-home.component';
 import { GetownbusinessClientsComponent } from './getownbusiness-clients/getownbusiness-clients.component';
 import { AngularMaterialModule } from '../../../modules/angular-material/angular-material.module';
-import { GetownbusinessAboutComponent } from './getownbusiness-about/getownbusiness-about.component'
+import { GetownbusinessContactComponent } from './getownbusiness-contact/getownbusiness-contact.component';
+import { GetownbusinessFooterComponent } from './getownbusiness-footer/getownbusiness-footer.component';
+import { GetownbusinessAboutOneComponent } from './getownbusiness-about-one/getownbusiness-about-one.component';
+import { GetownbusinessAboutTwoComponent } from './getownbusiness-about-two/getownbusiness-about-two.component';
+import { GetownbusinessAboutThreeComponent } from './getownbusiness-about-three/getownbusiness-about-three.component';
+import { GetownbusinessAboutFourComponent } from './getownbusiness-about-four/getownbusiness-about-four.component'
 
 
 @NgModule({
@@ -14,7 +19,12 @@ import { GetownbusinessAboutComponent } from './getownbusiness-about/getownbusin
     GetownbusinessComponent,
     GetownbusinessHomeComponent,
     GetownbusinessClientsComponent,
-    GetownbusinessAboutComponent
+    GetownbusinessContactComponent,
+    GetownbusinessFooterComponent,
+    GetownbusinessAboutOneComponent,
+    GetownbusinessAboutTwoComponent,
+    GetownbusinessAboutThreeComponent,
+    GetownbusinessAboutFourComponent
   ],
   imports: [
     CommonModule,
