@@ -2,6 +2,11 @@ body {
     font-family: 'Muli', sans-serif;
 }
 
+.client_content {
+    position  : relative;
+    margin-top: 10%;
+}
+
 .title {
     font-family: 'Quicksand', sans-serif;
     font-size  : 2rem;
@@ -16,11 +21,15 @@ body {
 
 .clients_logo {
     a {
-
-        img {
-            margin-top: 5%;
-            width: 50%;
-        }
+        margin: 2%;
     }
+}
+.santoshinterior_client_image {
+    margin-top: 5%;
+    width     : 50%;
+}
 
+.bmr_client_image {
+
+    width: 20%;
 }

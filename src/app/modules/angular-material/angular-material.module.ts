@@ -3,7 +3,8 @@ import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
 import {
   MatButtonModule, MatInputModule, MatFormFieldModule, MatSelectModule,
-  MatDividerModule, MatSnackBarModule, MatDialogModule, MatExpansionModule, MatCardModule, MatTabsModule
+  MatDividerModule, MatSnackBarModule, MatDialogModule, MatExpansionModule,
+  MatCardModule, MatTabsModule
 } from '@angular/material';
 
 
@@ -15,8 +16,9 @@ import {
   exports: [
     ReactiveFormsModule,
     MatButtonModule, MatInputModule, MatFormFieldModule,
-    MatSelectModule, MatDividerModule, MatSnackBarModule, MatDialogModule,
-    MatExpansionModule, MatCardModule, MatTabsModule
+    MatSelectModule, MatDividerModule, MatSnackBarModule,
+    MatDialogModule, MatExpansionModule, MatCardModule,
+    MatTabsModule
   ]
 })
 export class AngularMaterialModule { }

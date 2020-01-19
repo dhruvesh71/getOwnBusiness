@@ -12,4 +12,8 @@ export class GetownbusinessComponent implements OnInit {
   ngOnInit() {
   }
 
+  scrollToPage(page: HTMLElement) {
+    page.scrollIntoView({ behavior: 'smooth' });
+  }
+
 }

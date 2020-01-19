@@ -1,25 +1,21 @@
 .home {
-    background         : url("../../../../assets/getownbusiness/gob_home.jpg");
-    height             : 100vh;
-    width              : 100%;
-    position           : relative;
-    background-size    : cover;
-    background-repeat  : no-repeat;
-    background-position: center;
-    opacity            : 0.9;
+    background           : url("../../../../assets/getownbusiness/gob_home.jpg");
+    height               : 100vh;
+    width                : 100%;
+    background-size      : cover;
+    background-repeat    : no-repeat;
+    background-position  : center;
+    opacity              : 0.9;
+    background-attachment: fixed;
+    z-index              : 0;
 }
 
-.about_one {
-    width: 100%;
-}
-
-.about_two {
-    width: 100%;
-}
-
-.about_three {
-    height: 100vh;
-    width : 100%;
+.about_one,
+.about_two,
+.about_three,
+.about_four {
+    position: relative;
+    width   : 100%;
 }
 
 .clients {
@@ -36,11 +32,42 @@
     background-position: center;
 }
 
-.header {
-    border-bottom   : 1px solid #dfdfdf;
-    height          : 10%;
-    background-color: #06D199;
-    ;
+header {
+    width   : 100%;
+    position: fixed;
+}
+
+.header ul {
+   
+    text-align: center;
+
+    li {
+        list-style : none;
+        display    : inline-block;
+        margin-left: 4%;
+
+        a {
+            display        : block;
+            text-decoration: none;
+            text-transform : uppercase;
+            color          : #fff;
+            font-size      : 20px;
+            letter-spacing : 2px;
+            font-weight    : 900;
+            padding        : 20px;
+            transition     : all ease 0.5s;
+        }
+
+        a:hover {
+            cursor          : pointer;
+            color           : #000000;
+            background-color: #e9ecef;
+        }
+    }
+}
+
+mat-divider {
+    border-top-color: #ffffff;
 }
 
 .powered_by a {
@@ -52,37 +79,17 @@
     text-decoration: none;
 }
 
-.header ul {
-
-    li {
-        list-style: none;
-        display   : inline-block;
-
-        a {
-            display        : block;
-            text-decoration: none;
-            text-transform : uppercase;
-            font-size      : 16px;
-            font-family    : 'Raleway', sans-serif;
-            letter-spacing : 2px;
-            font-weight    : 600;
-            padding        : 20px;
-            transition     : all ease 0.5s;
-        }
-
-        a:hover {
-            cursor          : pointer;
-            background-color: #5b97b5;
-        }
-    }
-}
 
 @media screen and (max-width: 767px) {
 
     .header ul {
+
+        padding-inline-start: 0;
+
         li {
             a {
-                padding: 6px;
+                font-size: 16px;
+                padding  : 6px;
             }
         }
     }
@@ -91,9 +98,12 @@
 @media screen and (max-width: 575px) {
 
     .header ul {
+        padding-inline-start: 0;
+
         li {
             a {
-                padding: 4px;
+                font-size: 16px;
+                padding  : 4px;
             }
         }
     }

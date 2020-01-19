@@ -3,11 +3,14 @@ body {
 }
 
 .heading {
-    position: relative;
-    color   : #ffffff;
+    width   : 100%;
     top     : 30%;
+    left: 10%;
+    position: fixed;
+    color   : #ffffff;
 
     .title {
+
         font-family   : 'Qwigley', cursive;
         margin        : 0;
         text-align    : center;
@@ -16,14 +19,20 @@ body {
     }
 }
 
-@media screen and (max-width: 767px) {}
+@media screen and (max-width: 767px) {
+    .heading {
+        left: 1%;
+    }
+
+}
 
 @media screen and (max-width: 575px) {
 
     .heading {
-    
+
+        left: 1%;
         .title {
-            font-size     : 3rem;
+            font-size: 2.5rem;
         }
     }
 }
