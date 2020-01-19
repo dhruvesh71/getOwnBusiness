@@ -52,7 +52,8 @@ export class SantoshInteriorOurClientsComponent implements OnInit {
       this.getClientsLocation();
     },
       _err => {
-        this.snackBar.openFromComponent(ErrorMessageComponent, { data: { message: 'Error occured while processing..Kindly try again in sometime' } });
+        this.snackBar.openFromComponent(ErrorMessageComponent,
+          { data: { message: 'Error occured while processing..Kindly try again in sometime' } });
       });
   }
 

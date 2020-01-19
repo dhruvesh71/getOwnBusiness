@@ -9,7 +9,7 @@ import { SantoshInteriorWhatWeDoComponent } from './santosh-interior-what-we-do/
 import { SantoshInteriorClientDetailsComponent } from './santosh-interior-client-details/santosh-interior-client-details.component';
 import { SantoshInteriorFooterComponent } from './santosh-interior-footer/santosh-interior-footer.component';
 import { SantoshInteriorContactComponent } from './santosh-interior-contact/santosh-interior-contact.component';
-import { AngularMaterialModule } from '../../../modules/angular-material/angular-material.module'
+import { AngularMaterialModule } from '../../../modules/angular-material/angular-material.module';
 
 @NgModule({
   declarations: [

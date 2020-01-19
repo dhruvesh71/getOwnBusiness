@@ -10,12 +10,12 @@ export class GetownbusinessService {
 
   constructor(private http: HttpClient, public db: AngularFirestore, public firebase: FirebaseApp) { }
 
-  public addQuery(name: string, regarding: string, contact_number: number) {
+  public addQuery(name: string, regarding: string, contactNumber: number) {
     this.db.collection('queries')
       .add({
         name: name,
         regarding: regarding,
-        contact_number: contact_number
+        contactNumber: contactNumber
       });
   }
 }

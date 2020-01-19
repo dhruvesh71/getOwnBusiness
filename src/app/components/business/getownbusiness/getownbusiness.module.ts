@@ -11,7 +11,7 @@ import { GetownbusinessFooterComponent } from './getownbusiness-footer/getownbus
 import { GetownbusinessAboutOneComponent } from './getownbusiness-about-one/getownbusiness-about-one.component';
 import { GetownbusinessAboutTwoComponent } from './getownbusiness-about-two/getownbusiness-about-two.component';
 import { GetownbusinessAboutThreeComponent } from './getownbusiness-about-three/getownbusiness-about-three.component';
-import { GetownbusinessAboutFourComponent } from './getownbusiness-about-four/getownbusiness-about-four.component'
+import { GetownbusinessAboutFourComponent } from './getownbusiness-about-four/getownbusiness-about-four.component';
 
 
 @NgModule({

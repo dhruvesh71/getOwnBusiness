@@ -10,13 +10,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { environment } from '../environments/environment';
-import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { CookieMessageComponent } from './components/common/cookie-message/cookie-message.component';
+import { MatBottomSheetModule, MatButtonModule } from '@angular/material';
 
 @NgModule({
   declarations: [
     AppComponent,
     ErrorPageComponent,
     ErrorMessageComponent,
+    CookieMessageComponent,
   ],
   imports: [
     BrowserModule,
@@ -25,10 +27,10 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     HttpClientModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
-    MatProgressSpinnerModule
+    MatBottomSheetModule, MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent],
-  entryComponents: [ErrorMessageComponent],
+  entryComponents: [ErrorMessageComponent, CookieMessageComponent],
 })
 export class AppModule { }

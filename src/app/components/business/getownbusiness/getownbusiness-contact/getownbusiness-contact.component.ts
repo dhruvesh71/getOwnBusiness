@@ -29,9 +29,9 @@ export class GetownbusinessContactComponent implements OnInit {
 
     if (this.contactFormGroup.dirty && this.contactFormGroup.valid) {
 
-      let name: string = this.contactFormGroup.controls.name.value;
-      let regarding: string = this.contactFormGroup.controls.regarding.value;
-      let contactNumber: number = this.contactFormGroup.controls.contactNumber.value;
+      const name: string = this.contactFormGroup.controls.name.value;
+      const regarding: string = this.contactFormGroup.controls.regarding.value;
+      const contactNumber: number = this.contactFormGroup.controls.contactNumber.value;
 
       this.getOwnBusinessService.addQuery(name, regarding, contactNumber);
 

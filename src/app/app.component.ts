@@ -1,15 +1,16 @@
-import { Component, OnInit, OnChanges, AfterViewInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { MatBottomSheet } from '@angular/material/bottom-sheet';
+import { CookieMessageComponent } from './components/common/cookie-message/cookie-message.component';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit, AfterViewInit {
-  public isLoading: boolean = true;
+export class AppComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private matBottomSheet: MatBottomSheet) { }
 
   ngOnInit(): void {
 
@@ -17,19 +18,17 @@ export class AppComponent implements OnInit, AfterViewInit {
 
     if (currentUrl.includes('santosh')) {
       this.router.navigateByUrl('santoshinterior');
-    }
-
-    if (currentUrl.includes('getownbusiness')) {
+    } else if (currentUrl.includes('getownbusiness')) {
       this.router.navigateByUrl('getownbusiness');
     }
 
     // For Production
     window.onload = () => {
       console.clear();
-    }
+    };
+
+    // To show cookies message
+    this.matBottomSheet.open(CookieMessageComponent);
   }
 
-  ngAfterViewInit(): void {
-    this.isLoading = false;
-  }
 }

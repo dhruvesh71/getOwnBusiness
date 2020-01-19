@@ -18,12 +18,12 @@ export class SantoshInteriorService {
       ('../../../../../assets/json/santosh_interior_client_data.json');
   }
 
-  public addQuery(name: string, regarding: string, contact_number: number) {
+  public addQuery(name: string, regarding: string, contactNumber: number) {
     this.db.collection('queries')
       .add({
         name: name,
         regarding: regarding,
-        contact_number: contact_number
+        contact_number: contactNumber
       });
   }
 }
