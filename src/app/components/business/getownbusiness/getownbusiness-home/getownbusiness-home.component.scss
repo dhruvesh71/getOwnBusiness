@@ -5,9 +5,10 @@ body {
 .heading {
     width   : 100%;
     top     : 30%;
-    left: 10%;
+    left    : 10%;
     position: fixed;
     color   : #ffffff;
+    z-index : 10;
 
     .title {
 
@@ -31,6 +32,7 @@ body {
     .heading {
 
         left: 1%;
+
         .title {
             font-size: 2.5rem;
         }
