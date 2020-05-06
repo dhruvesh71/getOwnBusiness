@@ -6,47 +6,34 @@
 
     <!-- Home -->
     <div class="home">
-
-        <!-- Header -->
-        <header>
-            <div class="w3-bar header w3-container w3-content">
-                <ul>
-                    <li><a (click)="scrollToPage(about)">about</a></li>
-                    <li><a (click)="scrollToPage(clients)">clients</a></li>
-                    <li><a (click)="scrollToPage(contact)">contact</a></li>
-                </ul>
-                <mat-divider></mat-divider>
-            </div>
-        </header>
-
         <app-getownbusiness-home></app-getownbusiness-home>
-
     </div>
 
-    <div class="about_one" #about>
-        <app-getownbusiness-about-one></app-getownbusiness-about-one>
-    </div>
+    <div class="content_section">
+        <div class="about_one" #about>
+            <app-getownbusiness-about-one></app-getownbusiness-about-one>
+        </div>
 
-    <div class="about_two">
-        <app-getownbusiness-about-two></app-getownbusiness-about-two>
-    </div>
+        <div class="about_two">
+            <app-getownbusiness-about-two></app-getownbusiness-about-two>
+        </div>
 
-    <div class="about_three">
-        <app-getownbusiness-about-three></app-getownbusiness-about-three>
-    </div>
+        <div class="about_three">
+            <app-getownbusiness-about-three></app-getownbusiness-about-three>
+        </div>
 
-    <div class="about_four">
-        <app-getownbusiness-about-four></app-getownbusiness-about-four>
-    </div>
+        <div class="about_four">
+            <app-getownbusiness-about-four></app-getownbusiness-about-four>
+        </div>
 
-    <div class="clients" #clients>
-        <app-getownbusiness-clients></app-getownbusiness-clients>
-    </div>
+        <div class="clients" #clients>
+            <app-getownbusiness-clients></app-getownbusiness-clients>
+        </div>
 
-    <div class="contact" #contact>
-        <app-getownbusiness-contact></app-getownbusiness-contact>
+        <div class="contact" #contact>
+            <app-getownbusiness-contact></app-getownbusiness-contact>
+        </div>
     </div>
-
     <footer>
         <app-getownbusiness-footer></app-getownbusiness-footer>
     </footer>

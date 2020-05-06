@@ -23,9 +23,9 @@ export class AppComponent implements OnInit {
     }
 
     // For Production
-    window.onload = () => {
-      console.clear();
-    };
+    // window.onload = () => {
+    //   console.clear();
+    // };
 
     // To show cookies message
     this.matBottomSheet.open(CookieMessageComponent);

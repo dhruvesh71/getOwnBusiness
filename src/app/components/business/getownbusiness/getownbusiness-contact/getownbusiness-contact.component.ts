@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, Validators, FormControl } from '@angular/forms';
 import { MatSnackBar } from '@angular/material';
-import { SantoshInteriorService } from '../../santosh-interior/service/santosh-interior.service';
 import { ErrorMessageComponent } from 'src/app/components/common/error-message/error-message.component';
 import { GetownbusinessService } from '../service/getownbusiness.service';
 
@@ -39,6 +38,8 @@ export class GetownbusinessContactComponent implements OnInit {
         duration: 5000,
         data: { message: 'We got your query...Sit back...we will contact you...Thank You' }
       });
+
+      this.contactFormGroup.reset();
     }
   }
 }

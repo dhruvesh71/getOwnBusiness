@@ -16,4 +16,7 @@ export class GetownbusinessComponent implements OnInit {
     page.scrollIntoView({ behavior: 'smooth' });
   }
 
+  m() {
+    console.log('m')
+  }
 }

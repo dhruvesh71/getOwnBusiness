@@ -1,13 +1,25 @@
 .home {
-    background           : url("../../../../assets/getownbusiness/gob_home.jpg");
-    height               : 100vh;
-    width                : 100%;
-    background-size      : cover;
-    background-repeat    : no-repeat;
-    background-position  : center;
-    opacity              : 0.9;
-    background-attachment: fixed;
-    z-index              : 10;
+    background         : url("../../../../assets/getownbusiness/gob_home.jpg");
+    border             : 0;
+    height             : 90vh;
+    margin             : 0;
+    display            : flex;
+    padding            : 0;
+    overflow           : hidden;
+    position           : relative;
+    max-height         : 1000px;
+    align-items        : center;
+    background-size    : cover;
+    background-position: center top;
+}
+
+.content_section {
+    margin       : -40px 30px 6px;
+    box-shadow   : 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    z-index      : 3;
+    position     : relative;
+    background   : #FFFFFF;
 }
 
 .about_one,
@@ -24,50 +36,13 @@
 }
 
 .contact {
-    background         : url("../../../../assets/getownbusiness/gob_contact.jpg");
-    width              : 100%;
-    position           : relative;
-    background-size    : cover;
-    background-repeat  : no-repeat;
-    background-position: center;
+    background                : linear-gradient(#8e9eab, #eef2f3);
+    border-bottom-left-radius : 6px;
+    border-bottom-right-radius: 6px;
 }
 
-header {
-    width   : 100%;
-    position: fixed;
-}
-
-.header ul {
-   
-    text-align: center;
-
-    li {
-        list-style : none;
-        display    : inline-block;
-        margin-left: 4%;
-
-        a {
-            display        : block;
-            text-decoration: none;
-            text-transform : uppercase;
-            color          : #fff;
-            font-size      : 20px;
-            letter-spacing : 2px;
-            font-weight    : 900;
-            padding        : 20px;
-            transition     : all ease 0.5s;
-        }
-
-        a:hover {
-            cursor          : pointer;
-            color           : #000000;
-            background-color: #e9ecef;
-        }
-    }
-}
-
-mat-divider {
-    border-top-color: #ffffff;
+.header {
+    background-color: transparent;
 }
 
 .powered_by a {

@@ -3,12 +3,12 @@ body {
 }
 
 .heading {
-    width   : 100%;
-    top     : 30%;
-    left    : 10%;
-    position: fixed;
-    color   : #ffffff;
-    z-index : 10;
+    color        : #eef2f3;
+    cursor       : default;
+    margin       : 10% 0% 45% 20%;
+    width        : 100%;
+    opacity      : 0.9;
+    border-radius: 6px;
 
     .title {
 
@@ -16,7 +16,7 @@ body {
         margin        : 0;
         text-align    : center;
         letter-spacing: 10px;
-        font-size     : 6rem;
+        font-size     : 8rem;
     }
 }
 
@@ -34,7 +34,7 @@ body {
         left: 1%;
 
         .title {
-            font-size: 2.5rem;
+            font-size: 2rem;
         }
     }
 }
