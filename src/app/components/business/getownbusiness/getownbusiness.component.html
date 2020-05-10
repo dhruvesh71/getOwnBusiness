@@ -1,11 +1,22 @@
 <head>
     <title>GetOwnBusiness</title>
+
 </head>
 
 <body>
 
     <!-- Home -->
-    <div class="home">
+    <div class="home" #home>
+
+        <header>
+            <ul>
+                <li><a (click)="scrollToPage(home)">Home</a></li>
+                <li><a (click)="scrollToPage(about)">About</a></li>
+                <li><a (click)="scrollToPage(client)">Client</a></li>
+                <li><a (click)="scrollToPage(contact)">Contact</a></li>
+            </ul>
+        </header>
+
         <app-getownbusiness-home></app-getownbusiness-home>
     </div>
 
@@ -15,7 +26,7 @@
         </div>
 
         <div class="about_two">
-            <app-getownbusiness-about-two></app-getownbusiness-about-two>
+            <app-getownbusiness-about-two class="wow bounce"></app-getownbusiness-about-two>
         </div>
 
         <div class="about_three">

@@ -1,7 +1,0 @@
-@import './styles-variables.scss';
-
-@mixin comp-color($bg-color, $color) {
-    background-color: $bg-color;
-    color: $color;
-    opacity: 0.7;
-}

@@ -26,6 +26,8 @@ export class GetownbusinessContactComponent implements OnInit {
 
   public sendMessage() {
 
+    console.log(window.scrollY);
+
     if (this.contactFormGroup.dirty && this.contactFormGroup.valid) {
 
       const name: string = this.contactFormGroup.controls.name.value;

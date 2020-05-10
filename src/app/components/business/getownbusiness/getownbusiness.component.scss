@@ -1,14 +1,8 @@
 .home {
     background         : url("../../../../assets/getownbusiness/gob_home.jpg");
-    border             : 0;
     height             : 90vh;
-    margin             : 0;
     display            : flex;
-    padding            : 0;
-    overflow           : hidden;
     position           : relative;
-    max-height         : 1000px;
-    align-items        : center;
     background-size    : cover;
     background-position: center top;
 }
@@ -17,7 +11,6 @@
     margin       : -40px 30px 6px;
     box-shadow   : 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
     border-radius: 6px;
-    z-index      : 3;
     position     : relative;
     background   : #FFFFFF;
 }
@@ -26,8 +19,7 @@
 .about_two,
 .about_three,
 .about_four {
-    position: relative;
-    width   : 100%;
+    width: 100%;
 }
 
 .clients {
@@ -36,13 +28,9 @@
 }
 
 .contact {
-    background                : linear-gradient(#8e9eab, #eef2f3);
+    background                : linear-gradient(180deg, #8e9eab, #eef2f3);
     border-bottom-left-radius : 6px;
     border-bottom-right-radius: 6px;
-}
-
-.header {
-    background-color: transparent;
 }
 
 .powered_by a {
@@ -52,6 +40,33 @@
     font-weight    : 600;
     letter-spacing : 5px;
     text-decoration: none;
+}
+
+header {
+    z-index      : 1;
+    color        : #fff;
+    background   : rgba(0, 0, 0, 0.6);
+    position     : fixed;
+    width        : 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+    ul {
+        text-align: end;
+        list-style: none;
+
+        li {
+            display     : inline;
+            margin-right: 5%;
+            font-size   : medium;
+
+            a {
+                text-decoration: none;
+                cursor         : pointer;
+            }
+
+        }
+    }
+
 }
 
 

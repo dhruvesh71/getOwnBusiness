@@ -9,7 +9,7 @@ export class GetownbusinessAboutOneComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit(): void {
   }
 
 }

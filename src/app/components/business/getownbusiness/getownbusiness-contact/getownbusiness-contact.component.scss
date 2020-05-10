@@ -1,5 +1,15 @@
-.heading {
+a {
+    text-decoration: none;
 
+    i {
+        float     : right;
+        margin-top: 1%;
+        color     : #fff;
+        cursor    : pointer;
+    }
+}
+
+.heading {
     color     : white;
     margin-top: 10%;
 
@@ -15,6 +25,15 @@
         font-size  : 1.3rem;
         font-weight: 500;
     }
+}
+
+button {
+    width: 10%;
+}
+
+button:hover {
+    background-color: #000000;
+    color           : #fff;
 }
 
 @media screen and (max-width: 767px) {

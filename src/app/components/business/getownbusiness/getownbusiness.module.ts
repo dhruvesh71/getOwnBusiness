@@ -12,7 +12,6 @@ import { GetownbusinessAboutOneComponent } from './getownbusiness-about-one/geto
 import { GetownbusinessAboutTwoComponent } from './getownbusiness-about-two/getownbusiness-about-two.component';
 import { GetownbusinessAboutThreeComponent } from './getownbusiness-about-three/getownbusiness-about-three.component';
 import { GetownbusinessAboutFourComponent } from './getownbusiness-about-four/getownbusiness-about-four.component';
-import { NavigationDirective } from './directive/navigation.directive';
 
 @NgModule({
   declarations: [
@@ -25,7 +24,6 @@ import { NavigationDirective } from './directive/navigation.directive';
     GetownbusinessAboutTwoComponent,
     GetownbusinessAboutThreeComponent,
     GetownbusinessAboutFourComponent,
-    NavigationDirective,
   ],
   imports: [
     CommonModule,

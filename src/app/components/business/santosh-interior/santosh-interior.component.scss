@@ -1,9 +1,8 @@
-@import '../../../../styles/styles-common.scss';
 
 .home {
     background         : url("../../../../assets/santoshInteriors/home.jpg");
     height             : 100vh;
-    width              : $width;
+    width              : 100%;
     position           : relative;
     background-size    : cover;
     background-repeat  : no-repeat;
@@ -12,7 +11,7 @@
 
 .what_we_do_background {
     background         : url("../../../../assets/santoshInteriors/about.jpg");
-    width              : $width;
+    width              : 100%;
     position           : relative;
     background-size    : cover;
     background-repeat  : no-repeat;
@@ -22,7 +21,7 @@
 
 .client_background {
     background         : url("../../../../assets/santoshInteriors/client.jpg");
-    width              : $width;
+    width              : 100%;
     position           : relative;
     background-size    : cover;
     background-repeat  : no-repeat;
@@ -31,7 +30,7 @@
 
 .contact_background {
     background         : url("../../../../assets/santoshInteriors/connect.jpg");
-    width              : $width;
+    width              : 100%;
     position           : relative;
     background-size    : cover;
     background-repeat  : no-repeat;

@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { MatBottomSheet } from '@angular/material/bottom-sheet';
 import { CookieMessageComponent } from './components/common/cookie-message/cookie-message.component';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -28,7 +29,7 @@ export class AppComponent implements OnInit {
     // };
 
     // To show cookies message
-    this.matBottomSheet.open(CookieMessageComponent);
+    //this.matBottomSheet.open(CookieMessageComponent);
   }
 
 }

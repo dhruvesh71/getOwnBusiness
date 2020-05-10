@@ -1,4 +1,3 @@
-@import '../../../../styles/styles-common.scss';
 
 body {
     font-family: "Comic Sans MS", cursive, sans-serif;
@@ -6,7 +5,7 @@ body {
 .backgound-image {
     background         : url("../../../../assets/common/404.jpg");
     height             : 100%;
-    width              : $width;
+    width              : 100%;
     position           : fixed;
     z-index            : -1;
     background-size    : cover;

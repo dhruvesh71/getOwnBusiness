@@ -27,7 +27,7 @@ import { MatBottomSheetModule, MatButtonModule } from '@angular/material';
     HttpClientModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
-    MatBottomSheetModule, MatButtonModule
+    MatBottomSheetModule, MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
