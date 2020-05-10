@@ -15,13 +15,6 @@
     background   : #FFFFFF;
 }
 
-.about_one,
-.about_two,
-.about_three,
-.about_four {
-    width: 100%;
-}
-
 .clients {
     height: 50vh;
     width : 100%;
@@ -43,12 +36,11 @@
 }
 
 header {
-    z-index      : 1;
-    color        : #fff;
-    background   : rgba(0, 0, 0, 0.6);
-    position     : fixed;
-    width        : 100%;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    z-index   : 1;
+    color     : #fff;
+    position  : absolute;
+    width     : 100%;
+    transition: all .5s;
 
     ul {
         text-align: end;
@@ -57,18 +49,15 @@ header {
         li {
             display     : inline;
             margin-right: 5%;
-            font-size   : medium;
+            font-size   : 20px;
 
             a {
                 text-decoration: none;
                 cursor         : pointer;
             }
-
         }
     }
-
 }
-
 
 @media screen and (max-width: 767px) {
 

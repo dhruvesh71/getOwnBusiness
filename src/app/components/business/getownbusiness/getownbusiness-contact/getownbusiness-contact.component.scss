@@ -10,7 +10,7 @@ a {
 }
 
 .heading {
-    color     : white;
+    color     : #252F38;
     margin-top: 10%;
 
     .title {
@@ -20,6 +20,7 @@ a {
     }
 
     p {
+        color: #fff;
         margin-top : 2%;
         font-family: 'Quicksand', sans-serif;
         font-size  : 1.3rem;
@@ -34,25 +35,4 @@ button {
 button:hover {
     background-color: #000000;
     color           : #fff;
-}
-
-@media screen and (max-width: 767px) {
-    .heading {
-        color: #252F38;
-
-        p {
-            color: white;
-        }
-    }
-}
-
-@media screen and (max-width: 575px) {
-
-    .heading {
-        color: #252F38;
-
-        p {
-            color: white;
-        }
-    }
 }

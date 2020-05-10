@@ -1,39 +1,28 @@
 <head>
     <title>GetOwnBusiness</title>
-
 </head>
 
-<body>
+<body #top>
+    <header id="header">
+        <ul>
+            <li><a (click)="scrollToPage(top)">Home</a></li>
+            <li><a (click)="scrollToPage(about)">About</a></li>
+            <li><a (click)="scrollToPage(clients)">Client</a></li>
+            <li><a (click)="scrollToPage(contact)">Contact</a></li>
+        </ul>
+    </header>
 
-    <!-- Home -->
-    <div class="home" #home>
-
-        <header>
-            <ul>
-                <li><a (click)="scrollToPage(home)">Home</a></li>
-                <li><a (click)="scrollToPage(about)">About</a></li>
-                <li><a (click)="scrollToPage(client)">Client</a></li>
-                <li><a (click)="scrollToPage(contact)">Contact</a></li>
-            </ul>
-        </header>
-
-        <app-getownbusiness-home></app-getownbusiness-home>
-    </div>
+    <app-getownbusiness-home id="home" class="home wow fadeIn"></app-getownbusiness-home>
 
     <div class="content_section">
-        <div class="about_one" #about>
+
+        <div #about>
             <app-getownbusiness-about-one></app-getownbusiness-about-one>
-        </div>
 
-        <div class="about_two">
-            <app-getownbusiness-about-two class="wow bounce"></app-getownbusiness-about-two>
-        </div>
+            <app-getownbusiness-about-two></app-getownbusiness-about-two>
 
-        <div class="about_three">
             <app-getownbusiness-about-three></app-getownbusiness-about-three>
-        </div>
 
-        <div class="about_four">
             <app-getownbusiness-about-four></app-getownbusiness-about-four>
         </div>
 
@@ -45,7 +34,8 @@
             <app-getownbusiness-contact></app-getownbusiness-contact>
         </div>
     </div>
-    <footer>
+
+    <footer id="footer">
         <app-getownbusiness-footer></app-getownbusiness-footer>
     </footer>
 
