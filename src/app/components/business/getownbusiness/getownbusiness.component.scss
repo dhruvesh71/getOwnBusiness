@@ -48,17 +48,17 @@ header {
     }
 }
 
-
 @media screen and (max-width: 767px) {
 
-    .header ul {
+    .home {
+        height: 60vh;
+    }
 
-        padding-inline-start: 0;
+    header {
 
-        li {
-            a {
-                font-size: 16px;
-                padding  : 6px;
+        ul {
+            li {
+                margin-right: 8%;
             }
         }
     }
@@ -66,13 +66,12 @@ header {
 
 @media screen and (max-width: 575px) {
 
-    .header ul {
-        padding-inline-start: 0;
+    header {
 
-        li {
-            a {
-                font-size: 16px;
-                padding  : 4px;
+        ul {
+
+            li {
+                margin-right: 8%;
             }
         }
     }

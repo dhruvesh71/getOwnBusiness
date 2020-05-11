@@ -21,12 +21,9 @@ export class GetownbusinessContactComponent implements OnInit {
 
   constructor(private snackBar: MatSnackBar, private getOwnBusinessService: GetownbusinessService) { }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
   public sendMessage() {
-
-    console.log(window.scrollY);
 
     if (this.contactFormGroup.dirty && this.contactFormGroup.valid) {
 
