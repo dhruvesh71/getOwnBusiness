@@ -1,35 +1,55 @@
 body {
-    color           : #000000;
-
-    div.w3-left {
-        font-size  : 12px;
-        font-weight: bold;
-        width      : 50%;
-
-        nav a {
-            text-decoration: none;
-        }
-    }
-
-    div.w3-right {
-        font-size  : 14px;
-        font-weight: bold;
-    }
+    color: #000000;
 }
 
 .contact {
     text-align: right;
 
     ul {
-        display: block;
+        padding-inline-start: 0;
 
         li {
-            display   : inline-block;
-            list-style: none;
-            margin-left: 2%;
+            display    : inline-block;
+            list-style : none;
+            margin-left: 5%;
 
             a {
                 text-decoration: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .contact {
+        text-align: start;
+
+        ul {
+            text-align          : start;
+            padding-inline-start: 0;
+
+            li {
+
+                margin-left : 0;
+                margin-right: 5%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .contact {
+        text-align: start;
+
+        ul {
+            text-align          : start;
+            padding-inline-start: 0;
+
+            li {
+
+                margin-left : 0;
+                margin-right: 5%;
             }
         }
     }

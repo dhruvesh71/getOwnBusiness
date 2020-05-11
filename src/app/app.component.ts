@@ -23,13 +23,14 @@ export class AppComponent implements OnInit {
       this.router.navigateByUrl('getownbusiness');
     }
 
-    // For Production
-    // window.onload = () => {
-    //   console.clear();
-    // };
+    //For Production
+    window.onload = () => {
+      console.clear();
+    };
 
     // To show cookies message
     //this.matBottomSheet.open(CookieMessageComponent);
+ 
   }
 
 }

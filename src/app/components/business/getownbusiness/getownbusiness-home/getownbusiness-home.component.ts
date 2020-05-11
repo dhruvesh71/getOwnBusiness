@@ -11,5 +11,4 @@ export class GetownbusinessHomeComponent implements OnInit {
 
   ngOnInit() {
   }
-
 }

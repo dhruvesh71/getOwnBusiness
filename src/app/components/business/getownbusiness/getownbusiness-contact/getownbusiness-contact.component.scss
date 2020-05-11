@@ -1,3 +1,9 @@
+body {
+    background                : linear-gradient(180deg, #8e9eab, #eef2f3);
+    border-bottom-left-radius : 6px;
+    border-bottom-right-radius: 6px;
+}
+
 a {
     text-decoration: none;
 
@@ -10,7 +16,7 @@ a {
 }
 
 .heading {
-    color     : #252F38;
+    color     : #fff;
     margin-top: 10%;
 
     .title {
@@ -20,7 +26,7 @@ a {
     }
 
     p {
-        color: #fff;
+        color: #252F38;
         margin-top : 2%;
         font-family: 'Quicksand', sans-serif;
         font-size  : 1.3rem;
@@ -33,6 +39,6 @@ button {
 }
 
 button:hover {
-    background-color: #000000;
+    background-color: #adbac5;
     color           : #fff;
 }

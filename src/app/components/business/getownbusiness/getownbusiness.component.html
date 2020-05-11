@@ -2,7 +2,7 @@
     <title>GetOwnBusiness</title>
 </head>
 
-<body #top>
+<body appScroll #top>
     <header id="header">
         <ul>
             <li><a (click)="scrollToPage(top)">Home</a></li>
@@ -12,11 +12,11 @@
         </ul>
     </header>
 
-    <app-getownbusiness-home id="home" class="home wow fadeIn"></app-getownbusiness-home>
+    <app-getownbusiness-home id="home" class="home"></app-getownbusiness-home>
 
     <div class="content_section">
 
-        <div #about>
+        <div class="fadeInUp" #about>
             <app-getownbusiness-about-one></app-getownbusiness-about-one>
 
             <app-getownbusiness-about-two></app-getownbusiness-about-two>
@@ -26,11 +26,11 @@
             <app-getownbusiness-about-four></app-getownbusiness-about-four>
         </div>
 
-        <div class="clients" #clients>
+        <div class="fadeInUp" #clients>
             <app-getownbusiness-clients></app-getownbusiness-clients>
         </div>
 
-        <div class="contact" #contact>
+        <div class="contact fadeInUp" #contact>
             <app-getownbusiness-contact></app-getownbusiness-contact>
         </div>
     </div>

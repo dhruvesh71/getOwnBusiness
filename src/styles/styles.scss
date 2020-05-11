@@ -6,8 +6,8 @@ $fa-font-path: "~font-awesome/fonts";
 
 html,
 body {
-    margin : 0;
-    padding: 0;
+    margin     : 0;
+    padding    : 0;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -15,6 +15,45 @@ body {
 ::after,
 ::before {
     box-sizing: border-box;
+}
+
+@-webkit-keyframes fadeInUp {
+    0% {
+        opacity          : 0;
+        -webkit-transform: translateY(20px);
+        transform        : translateY(20px);
+    }
+
+    100% {
+        opacity          : 1;
+        -webkit-transform: translateY(0);
+        transform        : translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity          : 0;
+        -webkit-transform: translateY(20px);
+        -ms-transform    : translateY(20px);
+        transform        : translateY(20px);
+    }
+
+    100% {
+        opacity          : 1;
+        -webkit-transform: translateY(0);
+        -ms-transform    : translateY(0);
+        transform        : translateY(0);
+    }
+}
+
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name        : fadeInUp;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
 }
 
 @media screen and (max-width: 767px) {}

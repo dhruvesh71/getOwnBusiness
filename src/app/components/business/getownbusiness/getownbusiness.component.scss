@@ -15,17 +15,6 @@
     background   : #FFFFFF;
 }
 
-.clients {
-    height: 50vh;
-    width : 100%;
-}
-
-.contact {
-    background                : linear-gradient(180deg, #8e9eab, #eef2f3);
-    border-bottom-left-radius : 6px;
-    border-bottom-right-radius: 6px;
-}
-
 .powered_by a {
 
     font-family    : 'Qwigley', cursive !important;
@@ -58,6 +47,7 @@ header {
         }
     }
 }
+
 
 @media screen and (max-width: 767px) {
 

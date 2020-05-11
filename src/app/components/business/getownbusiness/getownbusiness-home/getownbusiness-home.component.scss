@@ -11,7 +11,6 @@ body {
     border-radius: 6px;
 
     .title {
-
         font-family   : 'Qwigley', cursive;
         margin        : 0;
         text-align    : center;
@@ -21,20 +20,23 @@ body {
 }
 
 @media screen and (max-width: 767px) {
-    .heading {
-        left: 1%;
-    }
 
+    .heading {
+        margin: 40% 0% 30% 10%;
+
+        .title {
+            font-size: 3rem;
+        }
+    }
 }
 
 @media screen and (max-width: 575px) {
 
     .heading {
-
-        left: 1%;
+        margin: 40% 0% 30% 10%;
 
         .title {
-            font-size: 2rem;
+            font-size: 3rem;
         }
     }
 }
